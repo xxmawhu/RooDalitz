@@ -1,0 +1,3 @@
+Library.RooCoord:                           lib/libKsKsK.so libCore.so libEG.so libHist.so libMathCore.so libMatrix.so libNet.so libRIO.so libTree.so
+Library.RooPWAPdf:                          lib/libKsKsK.so libCore.so libEG.so libHist.so libMathCore.so libMatrix.so libNet.so libRIO.so libTree.so
+Library.PWAPlot:                            lib/libKsKsK.so libCore.so libEG.so libHist.so libMathCore.so libMatrix.so libNet.so libRIO.so libTree.so
