@@ -1,3 +1,4 @@
+// Copyright (c) 2019-3-3 maxx
 #ifndef bes3plotstyle__H
 #define bes3plotstyle__H
 
@@ -49,56 +50,56 @@ namespace bes3plotstyle {
     // to be used together with WriteBes3()
     void WritePreliminary();
 
-    // Make a legend; 
+    // Make a legend;
     // position will have to change depending on the data shape
     void MakeLegend(TH1 * datahist,   // Histogram with data
             char * dataname,  // Description of data
-            TH1 * mc1hist =0, // Histogram with first MC
-            char * mc1name=0, // Description of first MC
-            TH1 * mc2hist =0, // Histogram with 2nd MC/BG
-            char * mc2name=0, // Description of second MC/BG
-            Double_t xlow = 0.55,      // Left edge of legend 
-            //(fraction of canavas width)
+            TH1 * mc1hist = 0,  // Histogram with first MC
+            char * mc1name = 0,  // Description of first MC
+            TH1 * mc2hist = 0,  // Histogram with 2nd MC/BG
+            char * mc2name = 0,  // Description of second MC/BG
+            Double_t xlow = 0.55,      // Left edge of legend
+            // (fraction of canavas width)
             Double_t ylow = 0.5,       // Bottom edge of legend
-            //(fraction of canavas height)
-            Double_t xhi = 0.94,       // Right edge of legend 
-            //(fraction of canavas width)
+            // (fraction of canavas height)
+            Double_t xhi = 0.94,       // Right edge of legend
+            // (fraction of canavas width)
             Double_t yhi = 0.7);       // Top edge of legend
-    //(fraction of canavas height)
+    // (fraction of canavas height)
 
-    // Make a legend; 
+    // Make a legend;
     // position will have to change depending on the data shape
     void MakeLegend(TGraph * datahist,   // Graph with data
             char * dataname,  // Description of data
-            TGraph * mc1hist =0, // Graph with first MC
-            char * mc1name=0, // Description of first MC
-            TGraph * mc2hist =0, // Graph with 2nd MC/BG
-            char * mc2name=0, // Description of second MC/BG
-            TGraph * mc3hist =0, // Graph with 3rd MC/BG
-            char * mc3name=0, // Description of third MC/BG
-            Double_t xlow = 0.55,      // Left edge of legend 
-            //(fraction of canavas width)
+            TGraph * mc1hist = 0,  // Graph with first MC
+            char * mc1name = 0,  // Description of first MC
+            TGraph * mc2hist = 0,  // Graph with 2nd MC/BG
+            char * mc2name = 0,  // Description of second MC/BG
+            TGraph * mc3hist = 0,  // Graph with 3rd MC/BG
+            char * mc3name = 0,  // Description of third MC/BG
+            Double_t xlow = 0.55,      // Left edge of legend
+            // (fraction of canavas width)
             Double_t ylow = 0.5,       // Bottom edge of legend
-            //(fraction of canavas height)
-            Double_t xhi = 0.94,       // Right edge of legend 
-            //(fraction of canavas width)
+            // (fraction of canavas height)
+            Double_t xhi = 0.94,       // Right edge of legend
+            // (fraction of canavas width)
             Double_t yhi = 0.7);       // Top edge of legend
-    //(fraction of canavas height)
+    // (fraction of canavas height)
 
 
     // Make a legend (version for fit functions
     // position will have to change depending on the data shape
     void MakeLegend(TH1 * datahist,   // Histogram with data
             char * dataname,  // Description of data
-            char ** functionnames, // list of function names
-            Double_t xlow = 0.55,      // Left edge of legend 
-            //(fraction of canavas width)
+            char ** functionnames,  // list of function names
+            Double_t xlow = 0.55,      // Left edge of legend
+            // (fraction of canavas width)
             Double_t ylow = 0.5,       // Bottom edge of legend
-            //(fraction of canavas height)
-            Double_t xhi = 0.94,       // Right edge of legend 
-            //(fraction of canavas width)
+            // (fraction of canavas height)
+            Double_t xhi = 0.94,       // Right edge of legend
+            // (fraction of canavas width)
             Double_t yhi = 0.7);       // Top edge of legend
-    //(fraction of canavas height)
+    // (fraction of canavas height)
 
     // Set the general style options
     void SetStyle();
@@ -112,26 +113,26 @@ namespace bes3plotstyle {
     void SetMeetingStyle();
 
     // Plot a data MC plot
-    void PlotDataMC(char * filename,  // Name for the output files, 
-            // without extension 
+    void PlotDataMC(char * filename,  // Name for the output files,
+            // without extension
             TH1 * datahist,   // Histogram with data
             char * dataname,  // Description of data
-            TH1 * mc1hist =0, // Histogram with first MC
-            char * mc1name=0, // Description of first MC
-            TH1 * mc2hist =0, // Histogram with 2nd MC/BG
-            char * mc2name=0, // Description of second MC/BG
+            TH1 * mc1hist = 0,  // Histogram with first MC
+            char * mc1name = 0,  // Description of first MC
+            TH1 * mc2hist = 0,  // Histogram with 2nd MC/BG
+            char * mc2name = 0,  // Description of second MC/BG
             Int_t prelim = 1,    // Use 1 for Preliminary plot
             // 2 for a publication plot
-            // and 0 for a meeting plot with 
+            // and 0 for a meeting plot with
             // stat and fit box
-            Double_t xlow = 0.55, // Left edge of legend 
-            //(fraction of canavas width)
+            Double_t xlow = 0.55,  // Left edge of legend
+            // (fraction of canavas width)
             Double_t ylow = 0.5,  // Bottom edge of legend
-            //(fraction of canavas height)
-            Double_t xhi = 0.94,  // Right edge of legend 
-            //(fraction of canavas width)
+            // (fraction of canavas height)
+            Double_t xhi = 0.94,  // Right edge of legend
+            // (fraction of canavas width)
             Double_t yhi = 0.7);  // Top edge of legend
-    //(fraction of canavas height)
+    // (fraction of canavas height)
 
     // Plot data with one or more (fit) functions
     // Functions should be part of the data histograms list of functions
@@ -139,27 +140,27 @@ namespace bes3plotstyle {
     // datahist->GetListOfFunctions->Add(TF1 * function))
     // functionnames should have at least as many elements as the function
     // list
-    void PlotDataFit(char * filename,  // Name for the output files, 
-            // without extension 
+    void PlotDataFit(char * filename,  // Name for the output files,
+            // without extension
             TH1F * datahist,   // Histogram with data
             char * dataname,  // Description of data
-            char ** functionnames,// Names of associated functions
+            char ** functionnames,  // Names of associated functions
             Int_t prelim = 1,    // Use 1 for Preliminary plot
             // 2 for a publication plot
-            // and 0 for a meeting plot with 
+            // and 0 for a meeting plot with
             // stat and fit box
-            Double_t xlow = 0.35, // Left edge of legend 
-            //(fraction of canavas width)
+            Double_t xlow = 0.35,  // Left edge of legend
+            // (fraction of canavas width)
             Double_t ylow = 0.5,  // Bottom edge of legend
-            //(fraction of canavas height)
-            Double_t xhi = 0.94,  // Right edge of legend 
-            //(fraction of canavas width)
+            // (fraction of canavas height)
+            Double_t xhi = 0.94,  // Right edge of legend
+            // (fraction of canavas width)
             Double_t yhi = 0.7);  // Top edge of legend
-    //(fraction of canavas height)
+    // (fraction of canavas height)
 
     // Scatter plot
-    void PlotScatter(char * filename,  // Name for the output files, 
+    void PlotScatter(char * filename,  // Name for the output files,
             TH1 * datahist,   // Histogram with data
             Int_t prelim = 1);
-};
+};  // namespace bes3plotstyle
 #endif

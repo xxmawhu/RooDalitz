@@ -1,16 +1,16 @@
+// Copyright (c) 2019-3-3 maxx
 #ifndef DecayType_HH
 #define DecayType_HH
 
+#include <math.h>
 #include <iostream>
 #include <fstream>
-#include <math.h>
 #include "TNamed.h"
 
 #if defined(USEROOT) || defined(__CINT__)
 #else
 #endif
 
-using namespace std;
 namespace DecayType{
     enum  DecayType{
         AB = 3,

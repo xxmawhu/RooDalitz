@@ -1,3 +1,4 @@
+// Copyright (c) 2019-3-3 maxx
 #ifndef LineShape_HH
 #define LineShape_HH
 
@@ -16,6 +17,6 @@ namespace LineShape{
         K1430_0,
         GS
     };
-};
+};  // namespace LineShape
 
 #endif
